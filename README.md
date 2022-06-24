@@ -6,7 +6,7 @@
 [![pypi](https://img.shields.io/pypi/v/pandasnet.svg)](https://pypi.org/project/pandasnet/)
 [![python supported](https://img.shields.io/pypi/pyversions/pandasnet.svg)](https://pypi.org/project/pandasnet/)
 
-`pandasnet` is a python package build on top of [`pythonnet`](https://pythonnet.github.io/). 
+`pandasnet_netstandard` is a python package build on top of [`pythonnet_netstandard`](https://github.com/henon/pythonnet_netstandard). 
 It provides additional data conversions for `pandas`, `numpy` and `datetime`
 
 ## Prerequisites
@@ -19,7 +19,7 @@ dotnet also provides [scripts](https://docs.microsoft.com/en-us/dotnet/core/tool
 ## Installation
 
 ```
-pip install pandasnet
+pip install pandasnet_netstandard
 ```
 
 ## Features
@@ -28,7 +28,7 @@ To load the converter you need to import the package once in your python environ
 If the dotnet clr isn't started yet through the pytonnet package the import will.
 
 ```python
-import pandasnet
+import pandasnet_netstandard
 ```
 
 We construct a simple C# function to test conversion
@@ -51,7 +51,7 @@ We load this library into our python environment then use it.
 
 ```python
 import clr
-import pandasnet # Load the converters
+import pandasnet_netstandard # Load the converters
 import pandas as pd
 from datetime import datetime
 

@@ -180,15 +180,15 @@ dotnet_libs = [
 
 setup(
     cmdclass=cmdclass,
-    name='pandasnet',
-    author='Fabien Dieulle',
-    author_email='fabiendieulle@hotmail.fr',
+    name='pandasnet_netstandard',
+    author='Damien HOFFSCHIR',
+    author_email='damien.hoffschir@outlook.com',
     description='Extensions of pythonnet package to support pandas DataFrame conversions',
     long_description=readme(),
     long_description_content_type='text/markdown',
-    url='https://github.com/fdieulle/pandasnet',
-    packages=['pandasnet'],
-    package_data={'pandasnet': ['libs/PandasNet.*']},
+    url='https://github.com/Filimindji/pandasnet_netstandard',
+    packages=['pandasnet_netstandard'],
+    package_data={'pandasnet_netstandard': ['libs/PandasNet.*']},
     install_requires=[
         'pycparser', 
         'pythonnet', 
